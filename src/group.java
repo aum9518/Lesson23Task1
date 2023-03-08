@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public enum group {
+public enum group {
+    JAVA,JAVASCRIPT;
 }
