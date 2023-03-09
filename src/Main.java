@@ -14,7 +14,7 @@ public class Main {
         Ар бир иш аракет учун озунчо метод тузуп, ал методдорду main класска чакырып иштетиниз.
                 Маанилер main класстан берилуусу керек.*/
 
-
+        Student student = new Student();
         Student student1 = new Student("Manas", 27,group.JAVA);
         Student student2 = new Student("Matmusa", 23,group.JAVA);
         Student student3 = new Student("Madina", 15,group.JAVA);
@@ -40,25 +40,10 @@ public class Main {
         ArrayList<Student>javaScript = new ArrayList<>();
         ArrayList<Student>sortByAge = new ArrayList<>();
         ArrayList<Student>sortByLetter = new ArrayList<>();
-        for (Student a :list) {
-            if (a.getGroup().equals(group.JAVA)){
-                java.add(a);
-            }
-            if (a.getGroup().equals(group.JAVASCRIPT)){
-                javaScript.add(a);
-            }
-            if (a.getAge()>=19 && a.getAge()<=23){
-                sortByAge.add(a);
-            }
-            if (a.getName().startsWith("A")){
-                sortByLetter.add(a);
-            }
-        }
+        System.out.println("All lists: "+list);
+        student.sortByGroup(list,java,javaScript);
+        student.sortByAge(list,sortByAge);
+        student.sortByLatter(list,sortByLetter);
 
-        System.out.println("All students: "+list);
-        System.out.println("Java group: "+java);
-        System.out.println("JavaScript: "+javaScript);
-        System.out.println("Sort by age: "+sortByAge);
-        System.out.println("Sort by letter 'A' : "+sortByLetter);
     }
 }
