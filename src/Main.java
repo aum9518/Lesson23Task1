@@ -44,6 +44,5 @@ public class Main {
         student.sortByGroup(list,java,javaScript);
         student.sortByAge(list,sortByAge);
         student.sortByLatter(list,sortByLetter);
-
     }
 }
